@@ -1,0 +1,94 @@
+html {
+    display: block;
+    background-color: rgba(69, 69, 158, 0.788);
+}
+
+head {
+    display: block;
+}
+
+style {
+    display: none;
+}
+
+body {
+    display: block;
+    margin: 8px;
+    font-size: 15em
+}
+
+h1 {
+    display: block;
+    font-size: 2em;
+    -webkit-margin-before: 2em;
+    -webkit-margin-after: 2em;
+    -webkit-margin-start: 2px;
+    -webkit-margin-end: 2px;
+    font-weight: bold;
+    padding-left: 2.5em
+    
+}
+
+form {
+    display: block;
+    margin-top: 1em;
+    padding-left: 3em
+
+
+table {
+    display: table;
+    border-collapse: separate;
+    border-spacing: 2px;
+    border-color: grey;
+}
+
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+td, th {
+    display: table-cell;
+    vertical-align: inherit;
+    font: 3em arial;
+}
+
+label {
+    cursor: default;
+    font: 3em arial;
+}
+
+input {
+    -webkit-appearance: textfield;
+    background-color: rgb(108, 204, 95);
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    padding: 1px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: initial;
+    border-image: initial;
+    font: 3em arial;
+}
+
+button {
+    text-rendering: auto;
+    color: initial;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: 2em;
+    text-indent: 0px;
+    text-shadow: none;
+    display: block;
+    position: center;
+    text-align: start;
+    margin: 2em;
+    font: 400 13.3333px Arial;
+}

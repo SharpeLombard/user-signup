@@ -67,7 +67,7 @@ def validate_inputs():
         verify_password = ''
 
     if not username_error and not password_error and not verify_password_error and not email_error:
-        return 'Welcome, '+username+'!'   
+        return render_template('Welcome.html', Title='Welcome, '+username+'!')   
     else:
         return render_template('SignUp.html',username=username, password=password, 
         username_error=username_error, password_error=password_error, verify_password=verify_password, 
