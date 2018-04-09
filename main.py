@@ -32,21 +32,27 @@ def validate_inputs():
     if len(username) < 3 or len(username) > 20:
         username_error = 'Username must be 3-20 characters'
         username = ''
+        password = ''
+        verify_password = ''
     elif ' ' in username:
         username_error = 'Username cannot contain spaces'
         username = ''
+        password = ''
+        verify_password = ''
     else:
         username = username
 
     if len(password) < 3 or len(password) > 20:
         password_error = 'Password must be 3-20 characters'
         password = ''
+        verify_password = ''
     else:
         password = password
 
     if password != verify_password:
         verify_password_error = 'Passwords do not match!'
         verify_password = ''
+        password = ''
 
     if len(email) == 0:
         email=email
@@ -56,8 +62,10 @@ def validate_inputs():
         email_error=''
     else:
         email_error='Invalid email address'
-        email = ''
-        
+        email = email
+        password = ''
+        verify_password = ''
+
     if not username_error and not password_error and not verify_password_error and not email_error:
         return 'Welcome, '+username+'!'   
     else:
